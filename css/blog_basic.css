@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 .post-content .tip {
   position: relative;
   margin: 2em 0;
@@ -68,7 +84,7 @@
 pre {
   font-size: 1em !important;
   background-color: #f8f8f8 !important;
-  font-family: monospace, sans-serif !important;
+  font-family: 'Fira Code', 'Source Code Pro', monospace, sans-serif !important;
 }
 
 figure.highlight {
@@ -469,10 +485,12 @@ mark {
 code,
 tt {
   padding: 0px 1px;
-  font-family: monospace, sans-serif !important;
+  font-family: 'Fira Code', 'Source Code Pro', monospace, sans-serif !important;
   font-size: 1em;
   white-space: pre-wrap;
   color: rgba(0, 0, 64, 0.75);
+  display: inline-block;
+  letter-spacing: -1.4px;
 }
 
 .toc {
