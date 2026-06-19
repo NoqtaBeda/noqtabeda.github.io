@@ -488,7 +488,7 @@ tt {
   font-family: 'Fira Code', 'Source Code Pro', monospace, sans-serif !important;
   font-size: 1em;
   white-space: pre-wrap;
-  color: rgba(0, 0, 64, 0.75);
+  color: var(--code-color, rgba(0, 0, 64, 0.75));
   display: inline-block;
   letter-spacing: -1.4px;
 }
