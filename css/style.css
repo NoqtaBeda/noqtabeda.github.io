@@ -146,15 +146,19 @@ a:active {
 /*animation ends*/
 .content {
   height: auto;
-  float: right;
+  float: none;
   width: 75%;
-  margin-top: 60px;
+  max-width: 1000px;
+  margin: 100px auto 0;
+  margin-left: max(25%, calc(25% + (75% - 1000px) / 3));
 }
 
 .page-top {
   width: 75%;
+  max-width: 1000px;
   position: fixed;
-  right: 0;
+  top: 0;
+  left: max(25%, calc(25% + (75% - 1000px) / 3));
   z-index: 3;
   background-color: #fff;
   height: 60px;
@@ -788,6 +792,7 @@ a.btn {
 
   .page-top {
     width: 100%;
+    left: 0;
   }
 
   .post-title h3 {
@@ -799,6 +804,8 @@ a.btn {
     width: 100%;
     z-index: 2;
     position: absolute;
+    float: none;
+    margin-left: 0;
   }
 
   .footer {
